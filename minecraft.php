@@ -1,6 +1,6 @@
 <?php
 
-$size = isset($_GET['s']) ? (($_GET['s']<250) ? (($_GET['s']>8) ? $_GET['s'] : 8) : 250) : 48;
+$size = isset($_GET['s']) ? max(8,min(250,$_GET['s'])) : 48;
 $user = isset($_GET['u']) ? $_GET['u'] : 'char';
 
 function get_avatar($user = 'char') {
