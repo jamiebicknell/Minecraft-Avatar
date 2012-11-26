@@ -6,6 +6,8 @@ If username is not found, then it uses the default skin: [http://www.minecraft.n
 
 ## Example Usage
 
+```html
     <img src='minecraft.php?u={username}&s={size}' />
+```
    
 Where `{size}` can be between 8 and 250 pixels
