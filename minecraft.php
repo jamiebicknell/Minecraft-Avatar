@@ -29,6 +29,7 @@ $skin = get_avatar($user);
 $im = imagecreatefromstring($skin);
 $av = imagecreatetruecolor($size,$size);
 imagecopyresized($av,$im,0,0,8,8,$size,$size,8,8);    // Face
+imagecolortransparent($im,imagecolorat($im,1,63));    // Black Hat Issue
 imagecopyresized($av,$im,0,0,40,8,$size,$size,8,8);   // Accessories
 header('Content-type: image/png');
 imagepng($av);
