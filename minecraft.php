@@ -3,7 +3,7 @@
 $size = isset($_GET['s']) ? max(8,min(250,$_GET['s'])) : 48;
 $user = isset($_GET['u']) ? $_GET['u'] : 'char';
 
-function get_avatar($user = 'char') {
+function get_skin($user = 'char') {
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, 'http://s3.amazonaws.com/MinecraftSkins/' . $user . '.png');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -12,7 +12,7 @@ function get_avatar($user = 'char') {
     $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
     if($status!='200') {
-        // Default Avatar: http://www.minecraft.net/skin/char.png
+        // Default Skin: http://www.minecraft.net/skin/char.png
         $output = 'R0lGODlhMAAQAPUuALV7Z6p9ZkUiDkEhDIpMPSgcC2pAMFI9ibSEbZxpTP///7uJciodDTMkEYNVO7eCcpZfQJBeQ5xjRkIdCsaWgL2OdL';
         $output .= '6IbL2OcqJqRyweDj8qFXpOMy8fDyQYCC8gDUIqEiYaCraJbL2Lco9ePoBTNG1DKpxyXK2AbbN7Yqx2WjQlEoFTOW9FLCseDQAAAAAAAAA';
         $output .= 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C1hNUCBEYXRhWE1QRD94cDIzRThDRkQwQzcyIiB4';
@@ -24,7 +24,7 @@ function get_avatar($user = 'char') {
     return $output;
 }
 
-$skin = get_avatar($user);
+$skin = get_skin($user);
 
 $im = imagecreatefromstring($skin);
 $av = imagecreatetruecolor($size,$size);
