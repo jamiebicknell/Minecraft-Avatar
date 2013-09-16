@@ -17,7 +17,7 @@ Where `{size}` can be between 8 and 250 pixels
 ## Skin Preview
 
 ```html
-<img src='skin?u={username}&s={size}' />
+<img src='skin.php?u={username}&s={size}' />
 ```
    
 Where `{size}` can be between 40 and 800 pixels
