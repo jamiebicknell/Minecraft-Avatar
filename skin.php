@@ -97,5 +97,3 @@ imagepng($av);
 imagedestroy($im);
 imagedestroy($mi);
 imagedestroy($av);
-
-?>

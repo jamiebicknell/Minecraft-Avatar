@@ -53,5 +53,3 @@ header('Content-type: image/png');
 imagepng($av);
 imagedestroy($im);
 imagedestroy($av);
-
-?>
