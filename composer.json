@@ -1,0 +1,16 @@
+{
+    "name": "jamiebicknell/Minecraft-Avatar",
+    "description": "PHP/GD creation of a Minecraft facial avatar or full skin preview based on a given username, constructed from their Minecraft skin",
+    "keywords": ["minecraft","avatar","skin","php","gd"],
+    "homepage": "http://github.com/jamiebicknell/Minecraft-Avatar",
+    "license": "Zlib",
+    "authors": [
+        {
+            "name": "Jamie Bicknell",
+            "homepage": "http://www.jamiebicknell.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
