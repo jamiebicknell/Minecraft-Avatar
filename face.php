@@ -1,5 +1,12 @@
 <?php
 
+/*
+Title:      Minecraft Avatar
+URL:        http://github.com/jamiebicknell/Minecraft-Avatar
+Author:     Jamie Bicknell
+Twitter:    @jamiebicknell
+*/
+
 $size = isset($_GET['s']) ? max(8,min(250,$_GET['s'])) : 48;
 $user = isset($_GET['u']) ? $_GET['u'] : 'char';
 
