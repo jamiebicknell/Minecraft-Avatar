@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks
+Options -MultiViews
+RewriteEngine on
+IndexIgnore *
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule ^(.+)/$ $1 [R=301,L]
+
+RewriteRule ^skin/([^/]+)/([^/]+)$ skin.php?u=$1&s=$2
+RewriteRule ^skin/([^/]+)$ skin.php?u=$1
+RewriteRule ^avatar/([^/]+)/([^/]+)$ face.php?u=$1&s=$2
+RewriteRule ^avatar/([^/]+)$ face.php?u=$1
+</ifModule>

@@ -14,7 +14,6 @@ If username is not found, then it uses the default skin: [http://www.minecraft.n
    
 Where `{size}` can be between 8 and 250 pixels
 
-
 ## Skin Preview
 
 <img src='http://jamiebicknell.github.io/Minecraft-Avatar/1379352360572.png' alt='Steve Skin' />
@@ -24,3 +23,31 @@ Where `{size}` can be between 8 and 250 pixels
 ```
    
 Where `{size}` can be between 40 and 800 pixels
+
+## .Htaccess
+
+If you have `mod_rewrite` enabled you can view the avatar via cleaner URLs.
+
+For an avatar without a size:
+
+```html
+<img src='http://domain.com/avatar/{username}' />
+```
+
+For an avatar with a size:
+
+```html
+<img src='http://domain.com/avatar/{username}/{size}' />
+```
+
+For a skin without a size:
+
+```html
+<img src='http://domain.com/skin/{username}' />
+```
+    
+For a skin with a size:
+
+```html
+<img src='http://domain.com/skin/{username}/{size}' />
+```
