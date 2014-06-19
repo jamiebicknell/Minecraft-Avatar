@@ -51,3 +51,7 @@ For a skin with a size:
 ```html
 <img src='http://domain.com/skin/{username}/{size}' />
 ```
+
+##License
+
+Minecraft Avatar is licensed under the [MIT license](http://opensource.org/licenses/MIT), see [LICENSE.md](https://github.com/jamiebicknell/Minecraft-Avatar/blob/master/LICENSE.md) for details.
