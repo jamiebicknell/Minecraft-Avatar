@@ -12,7 +12,7 @@ If username is not found, then it uses the default skin: [http://www.minecraft.n
 <img src='face.php?u={username}&s={size}&v={view}' />
 ```
 
-### Query Parameters
+#### Query Parameters
 
 <table>
     <tr>
@@ -49,7 +49,7 @@ If username is not found, then it uses the default skin: [http://www.minecraft.n
 <img src='skin.php?u={username}&s={size}' />
 ```
 
-### Query Parameters
+#### Query Parameters
 
 <table>
     <tr>
@@ -76,7 +76,7 @@ If username is not found, then it uses the default skin: [http://www.minecraft.n
 
 If you have `mod_rewrite` enabled you can view the avatar via cleaner URLs.
 
-### Facial Avatar
+#### Facial Avatar
 
 ```html
 <img src='http://domain.com/avatar/{username}' />
@@ -94,7 +94,7 @@ If you have `mod_rewrite` enabled you can view the avatar via cleaner URLs.
 <img src='http://domain.com/avatar/{username}/{size}/{view}' />
 ```
 
-### Skin Preview
+#### Skin Preview
 
 ```html
 <img src='http://domain.com/skin/{username}' />
