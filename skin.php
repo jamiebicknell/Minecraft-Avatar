@@ -12,8 +12,26 @@ $user = isset($_GET['u']) ? $_GET['u'] : 'char';
 
 function get_skin($user = 'char')
 {
+    $arr  = array(
+        "name" => $user,
+        "agent" => "minecraft"
+    );
+    $data = json_encode($arr);
+    
+    $ch = curl_init('https://api.mojang.com/profiles/page/1');
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+    'Content-Type: application/json',
+    'Content-Length: ' . strlen($data)
+    ));
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_close($ch);
+    $username = json_decode($res, true);
+    $user       = $username['profiles']['0']['name'];
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'http://s3.amazonaws.com/MinecraftSkins/' . $user . '.png');
+    curl_setopt($ch, CURLOPT_URL, 'http://skins.minecraft.net/MinecraftSkins/' . $user . '.png');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_TIMEOUT, 5);
     $output = curl_exec($ch);
