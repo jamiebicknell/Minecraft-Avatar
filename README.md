@@ -2,7 +2,7 @@
 
 PHP/GD creation of a Minecraft facial avatar or full skin preview based on a given username, constructed from their Minecraft skin.
 
-If username is not found, then it uses the default skin: [http://www.minecraft.net/skin/char.png](http://www.minecraft.net/skin/char.png)
+If username is not found, then it uses the default Steve skin: [https://minecraft.net/images/steve.png](https://minecraft.net/images/steve.png)
 
 ## Facial Avatar
 
