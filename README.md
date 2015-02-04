@@ -6,7 +6,7 @@ If username is not found, then it uses the default skin: [http://www.minecraft.n
 
 ## Facial Avatar
 
-<img src='http://jamiebicknell.github.io/Minecraft-Avatar/1379352360571.png' alt='Steve Avatar' />
+<img src='http://jamiebicknell.github.io/Minecraft-Avatar/steve-face.png' alt='Steve Avatar' /> <img src='http://jamiebicknell.github.io/Minecraft-Avatar/alex-face.png' alt='Alex Avatar' />
 
 ```html
 <img src='face.php?u={username}&s={size}&v={view}' />
@@ -43,7 +43,9 @@ If username is not found, then it uses the default skin: [http://www.minecraft.n
 
 ## Skin Preview
 
-<img src='http://jamiebicknell.github.io/Minecraft-Avatar/1379352360572.png' alt='Steve Skin' />
+<img src='http://jamiebicknell.github.io/Minecraft-Avatar/steve-skin.png' alt='Steve Skin' />
+
+<img src='http://jamiebicknell.github.io/Minecraft-Avatar/alex-skin.png' alt='Alex Skin' />
 
 ```html
 <img src='skin.php?u={username}&s={size}' />
