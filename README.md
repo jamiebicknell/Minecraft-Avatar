@@ -107,6 +107,9 @@ If you have `mod_rewrite` enabled you can view the avatar via cleaner URLs.
 ## Notes
 
 * After changing your skin on [Minecraft.net](https://minecraft.net/profile) it can take up to 1 hour for the facial avatar or skin preview to show the new skin.
+* The skin preview differenciates between the Steve (4 pixel arm width) and Alex skin (3 pixel arm width) by checking the alpha value on the pixel at 54, 20. Therefore, the preview assumes that the skin is well formed and that the unallocated areas are transparent.
+* Default skins: [Steve](https://minecraft.net/images/steve.png) and [Alex](https://minecraft.net/images/alex.png)
+* Skin templates: [Steve](https://minecraft.net/images/4px_reference.png) and [Alex](https://minecraft.net/images/3px_reference.png)
 
 ## License
 
