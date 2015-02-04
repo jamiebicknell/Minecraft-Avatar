@@ -24,7 +24,7 @@ If username is not found, then it uses the default skin: [http://www.minecraft.n
     <tr>
         <td>u</td>
         <td>jamiebicknell</td>
-        <td><a href='http://www.minecraft.net/skin/char.png'>steve</a></td>
+        <td><a href='https://minecraft.net/images/steve.png'>steve</a></td>
         <td>Username of Minecraft player</td>
     </tr>
     <tr>
@@ -61,7 +61,7 @@ If username is not found, then it uses the default skin: [http://www.minecraft.n
     <tr>
         <td>u</td>
         <td>jamiebicknell</td>
-        <td><a href='http://www.minecraft.net/skin/char.png'>steve</a></td>
+        <td><a href='https://minecraft.net/images/steve.png'>steve</a></td>
         <td>Username of Minecraft player</td>
     </tr>
     <tr>
