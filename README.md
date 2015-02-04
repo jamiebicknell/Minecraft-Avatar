@@ -104,6 +104,10 @@ If you have `mod_rewrite` enabled you can view the avatar via cleaner URLs.
 <img src='http://domain.com/skin/{username}/{size}' />
 ```
 
+## Notes
+
+* After changing your skin on [Minecraft.net](https://minecraft.net/profile) it can take up to 1 hour for the facial avatar or skin preview to show the new skin.
+
 ## License
 
 Minecraft Avatar is licensed under the [MIT license](http://opensource.org/licenses/MIT), see [LICENSE.md](https://github.com/jamiebicknell/Minecraft-Avatar/blob/master/LICENSE.md) for details.
