@@ -44,8 +44,8 @@ function get_skin($user)
         $result = curl_exec($ch);
         $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         if ($status == 301) {
-            preg_match_all('/location:(.*)/i', $result, $matches);
-            curl_setopt($ch, CURLOPT_URL, trim(array_pop($matches[1])));
+            preg_match('/location:(.*)/i', $result, $matches);
+            curl_setopt($ch, CURLOPT_URL, trim($matches[1]));
             curl_setopt($ch, CURLOPT_HEADER, 0);
             curl_setopt($ch, CURLOPT_NOBODY, 0);
             $result = curl_exec($ch);
