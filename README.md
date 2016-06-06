@@ -2,7 +2,7 @@
 
 PHP/GD creation of a Minecraft facial avatar or full skin preview based on a given username, constructed from their Minecraft skin.
 
-If username is not found, then it uses the default Steve skin: [https://minecraft.net/images/steve.png](https://minecraft.net/images/steve.png)
+If username is not found, then it uses the default Steve skin: [http://assets.mojang.com/SkinTemplates/steve.png](http://assets.mojang.com/SkinTemplates/steve.png)
 
 ## Facial Avatar
 
@@ -24,7 +24,7 @@ If username is not found, then it uses the default Steve skin: [https://minecraf
     <tr>
         <td>u</td>
         <td>jamiebicknell</td>
-        <td><a href='https://minecraft.net/images/steve.png'>steve</a></td>
+        <td><a href='http://assets.mojang.com/SkinTemplates/steve.png'>steve</a></td>
         <td>Username of Minecraft player</td>
     </tr>
     <tr>
@@ -63,7 +63,7 @@ If username is not found, then it uses the default Steve skin: [https://minecraf
     <tr>
         <td>u</td>
         <td>jamiebicknell</td>
-        <td><a href='https://minecraft.net/images/steve.png'>steve</a></td>
+        <td><a href='http://assets.mojang.com/SkinTemplates/steve.png'>steve</a></td>
         <td>Username of Minecraft player</td>
     </tr>
     <tr>
@@ -110,8 +110,8 @@ If you have `mod_rewrite` enabled you can view the avatar via cleaner URLs.
 
 * After changing your skin on [Minecraft.net](https://minecraft.net/profile) it can take up to 1 hour for the facial avatar or skin preview to show the new skin.
 * The skin preview differenciates between the Steve (4 pixel arm width) and Alex skin (3 pixel arm width) by checking the alpha value on the pixel at 54, 20. Therefore, the preview assumes that the skin is well formed and that the unallocated areas are transparent.
-* Default skins: [Steve](https://minecraft.net/images/steve.png) and [Alex](https://minecraft.net/images/alex.png)
-* Skin templates: [Steve](https://minecraft.net/images/4px_reference.png) and [Alex](https://minecraft.net/images/3px_reference.png)
+* Default skins: [Steve](http://assets.mojang.com/SkinTemplates/steve.png) and [Alex](http://assets.mojang.com/SkinTemplates/alex.png)
+* Skin templates: [Steve](http://assets.mojang.com/SkinTemplates/4px_reference.png) and [Alex](http://assets.mojang.com/SkinTemplates/3px_reference.png)
 
 ## License
 

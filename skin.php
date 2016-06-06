@@ -12,7 +12,7 @@ $user = isset($_GET['u']) ? $_GET['u'] : '';
 
 function get_skin($user)
 {
-    // Default Steve Skin: https://minecraft.net/images/steve.png
+    // Default Steve Skin: http://assets.mojang.com/SkinTemplates/steve.png
     $output = 'iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFDUlEQVR42u2a20sUURzH97G0LKMotPuWbVpslj1olJ';
     $output .= 'XdjCgyisowsSjzgrB0gSKyC5UF1ZNQWEEQSBQ9dHsIe+zJ/+nXfM/sb/rN4ZwZ96LOrnPgyxzP/M7Z+X7OZc96JpE';
     $output .= 'ISfWrFhK0YcU8knlozeJKunE4HahEqSc2nF6zSEkCgGCyb+82enyqybtCZQWAzdfVVFgBJJNJn1BWFgC49/VpwGVl';
