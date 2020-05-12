@@ -9,7 +9,7 @@ If username is not found, then it uses the default Steve skin: [http://assets.mo
 <img src='http://jamiebicknell.github.io/Minecraft-Avatar/steve-face.png' alt='Steve Avatar' /> <img src='http://jamiebicknell.github.io/Minecraft-Avatar/alex-face.png' alt='Alex Avatar' />
 
 ```html
-<img src='face.php?u={username}&s={size}&v={view}' />
+<img src='face.php?u={username}&s={size}&v={view}&h={false}' />
 ```
 
 #### Query Parameters
@@ -39,6 +39,12 @@ If username is not found, then it uses the default Steve skin: [http://assets.mo
         <td>front</td>
         <td>View of facial avatar (optional)</td>
     </tr>
+    <tr>
+            <td>h</td>
+            <td>false, true</td>
+            <td>true</td>
+            <td>Show hat accessory for facial avatar (optional)</td>
+        </tr>
 </table>
 
 ## Skin Preview
